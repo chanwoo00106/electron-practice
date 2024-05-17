@@ -1,4 +1,3 @@
-import { notesMock } from '@renderer/store/mocks'
 import { cn, formatDateFromMs } from '@renderer/utils'
 import { NoteInfo } from '@shared/models'
 import { ComponentProps } from 'react'
