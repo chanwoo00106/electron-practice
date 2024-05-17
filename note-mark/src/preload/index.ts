@@ -1,5 +1,4 @@
 import { contextBridge } from 'electron'
-import { electronAPI } from '@electron-toolkit/preload'
 
 // // Custom APIs for renderer
 // const api = {}
@@ -27,7 +26,7 @@ if (process.contextIsolated) {
 
 try {
   contextBridge.exposeInMainWorld('context', {
-    // TODO:
+    locale: navigator.language
   })
 } catch (error) {
   console.log(error)
