@@ -19,7 +19,11 @@ export const Sidebar = ({ className, children, ...props }: ComponentProps<'aside
 
 export const Content = forwardRef<HTMLDivElement, ComponentProps<'div'>>(
   ({ children, className, ...props }, ref) => {
-    return <div ref={ref} className={cn('flex-1 h-full overflow-auto', className)} {...props}></div>
+    return (
+      <div ref={ref} className={cn('flex-1 h-full overflow-auto', className)} {...props}>
+        {children}
+      </div>
+    )
   }
 )
 
