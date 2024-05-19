@@ -2,6 +2,7 @@ import {
   ActionButtonRow,
   Content,
   DraggableTopBar,
+  FloatingNoteTitle,
   NotePreviewList,
   RootLayout,
   Sidebar
@@ -18,6 +19,7 @@ const App = (): JSX.Element => {
           <NotePreviewList className="mt-3 space-y-1" />
         </Sidebar>
         <Content className="border-l bg-zinc-900/50 border-l-white/20">
+          <FloatingNoteTitle className="pt-2" />
           <MarkdownEditor />
         </Content>
       </RootLayout>
